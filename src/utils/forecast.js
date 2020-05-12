@@ -15,7 +15,7 @@ const forecast = (latitude,longitude,callback) => {
                 summary : body.current.weather_descriptions[0],
                 temperature : body.current.temperature,
                 feelslike : body.current.feelslike,
-                message : body.current.weather_descriptions[0]+'. It is ' + body.current.temperature + ' degrees out and feels like ' + body.current.feelslike + ' degrees'
+                message : body.current.weather_descriptions[0]+'. It is ' + body.current.temperature + ' degrees out and feels like ' + body.current.feelslike + ' degrees. The humidity is ' + body.current.humidity + '% .'
             }) 
 
         }
